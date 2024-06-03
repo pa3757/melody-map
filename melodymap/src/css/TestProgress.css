@@ -1,0 +1,20 @@
+/* TestProgress.css */
+
+.progress-bar {
+  width: 280px;
+  height: 28px;
+  background-color: rgb(252, 239, 220);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  line-height: 30px;
+  text-align: center;
+  color: black;
+  background-color: #cbe0ff; /* 진행 바 색상 (파란색) */
+  border-radius: 5px;
+  transition: width 1s ease-in-out;
+}

@@ -1,0 +1,105 @@
+/* 웹폰트 추가 */
+@font-face {
+  font-family: "WavvePADO-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 모든 요소에 웹폰트 및 box-sizing 적용 */
+* {
+  font-family: "WavvePADO-Regular";
+  box-sizing: border-box;
+}
+
+/* 컨테이너 스타일 */
+.containerRD {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: row;
+}
+
+/* 래퍼 스타일 */
+.wrapperRD {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid whitesmoke;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  width: 380px; /* 수정: 너비 400px로 변경 */
+  max-width: 100%;
+  height: auto;
+  overflow: auto;
+  margin-top: 0px;
+  overflow-x: hidden; /* 좌우 스크롤바가 생기지 않도록 설정 */
+  position: relative;
+}
+
+/* 내용 스타일 */
+.contentRD {
+  background-color: whitesmoke;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 헤더 스타일 */
+.headerRD {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* 선 스타일 */
+.lineRD {
+  border-top: 1px solid black;
+  width: 100%;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+/* 이미지 스타일 */
+.imageRD {
+  width: 300px;
+  height: 250px;
+}
+.nameRD {
+  font-size: 20px;
+}
+.reviewRD {
+  font-size: 20px;
+}
+.titleRD {
+  font-size: 30px;
+}
+.saveRD {
+  background-color: rgb(212, 241, 253);
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: auto; /* 왼쪽 여백을 auto로 설정하여 가운데 정렬 */
+  margin-right: auto;
+  margin-bottom: 40px;
+}

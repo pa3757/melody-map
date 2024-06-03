@@ -1,0 +1,119 @@
+/* travelwrite.css */
+
+/* 글로벌 폰트 설정 */
+@font-face {
+  font-family: "WavvePADO-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 전체 요소에 적용되는 기본 폰트 설정 */
+* {
+  font-family: "WavvePADO-Regular";
+}
+
+/* 컨테이너 정렬 및 배경 설정 */
+.containerT {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 전체 레이아웃 설정 */
+.wrapperT {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid whitesmoke;
+  padding: 30px;
+  border-radius: 40px;
+  background-color: whitesmoke;
+  width: 380px;
+  height: auto;
+  margin: 0 auto; /* 수평 가운데 정렬을 위해 추가 */
+}
+
+/* 제목 스타일 수정 */
+.boardT {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border: 2px solid #05e3eb;
+  background-color: transparent;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 330px;
+  border-radius: 8px;
+  margin-top: 20px; /* 추가된 부분 */
+  /* 복구된 부분 */
+}
+
+/* 저장 버튼 스타일 수정 */
+.saveT {
+  background-color: rgb(212, 241, 253);
+  width: 200px;
+  margin-top: 30px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 25px;
+}
+.marginT {
+  margin-bottom: 50px;
+}
+
+/* 타이틀 및 입력 폼 스타일 수정 */
+.titleT,
+.resultT,
+.imageT {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.titleT p,
+.resultT p,
+.imageT p {
+  width: 50px;
+  font-weight: bold;
+  margin-right: 10px; /* 라벨과 입력 필드 사이 간격 */
+}
+
+.titleT input,
+.resultT input,
+.imageT input[type="file"] {
+  flex: 1;
+  height: 30px;
+  width: 250px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* 후기 내용 입력 폼 스타일 수정 */
+.contentT {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentT p {
+  width: 80px;
+  font-weight: bold;
+  margin-bottom: 10px; /* 라벨과 입력 필드 사이 간격 */
+}
+
+.contentT textarea {
+  width: 300px;
+  height: 250px;
+  padding: 5px;
+  resize: none;
+  border-radius: 10px;
+}

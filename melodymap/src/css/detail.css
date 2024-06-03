@@ -1,0 +1,216 @@
+/* 웹폰트 추가 */
+@font-face {
+  font-family: "WavvePADO-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 모든 요소에 웹폰트 및 box-sizing 적용 */
+* {
+  font-family: "WavvePADO-Regular";
+  box-sizing: border-box;
+}
+
+/* 컨테이너 스타일 */
+.containerD {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden; /* 좌우 스크롤바가 생기지 않도록 설정 */
+}
+
+/* 래퍼 스타일 */
+.wrapperD {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 모든 요소를 가운데 정렬 */
+  justify-content: center;
+  border: 5px solid whitesmoke;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  width: 380px;
+  max-width: 100%;
+  height: auto;
+  overflow: auto;
+  margin-top: auto;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/* 내용 스타일 */
+.contentD {
+  background-color: whitesmoke;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 20px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px; /* 수정: 최대 너비 300px로 변경 */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 설명 스타일 */
+.explainD {
+  width: 330px;
+  font-size: 15px;
+  white-space: normal; /* 줄 바꿈 허용 */
+  overflow: hidden; /* 넘치는 부분 숨기기 */
+  text-overflow: ellipsis; /* 넘치는 부분을 ...으로 표시 */
+  display: -webkit-box; /* flexbox 레이아웃을 사용 */
+  -webkit-line-clamp: 2; /* 두 줄까지 표시 */
+  -webkit-box-orient: vertical; /* flexbox의 방향을 세로로 설정 */
+  word-wrap: break-word; /* 단어가 너무 길 때 줄 바꿈 허용 */
+  margin: 0 auto; /* 가운데 정렬 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+/* 이미지 스타일 */
+.imageD {
+  width: 300px;
+  height: 250px;
+  margin-top: 30px;
+}
+
+/* 선 스타일 */
+.lineD {
+  border-top: 1px solid black;
+  width: 380px; /* 부모 요소의 너비에 맞춤 */
+  margin-bottom: 20px;
+  text-align: center; /* 가운데 정렬 */
+}
+
+/* 추가 설명 스타일 */
+.explain3D {
+  width: 330px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 15px;
+  white-space: normal; /* 줄 바꿈 허용 */
+  overflow: hidden; /* 넘치는 부분 숨기기 */
+  text-overflow: ellipsis; /* 넘치는 부분을 ...으로 표시 */
+  display: -webkit-box; /* flexbox 레이아웃을 사용 */
+  -webkit-line-clamp: 4; /* 네 줄까지 표시 */
+  -webkit-box-orient: vertical; /* flexbox의 방향을 세로로 설정 */
+  cursor: pointer; /* 클릭 가능하도록 포인터 커서 표시 */
+}
+
+.explain3D.expanded {
+  -webkit-line-clamp: unset; /* 라인 클램프 해제 */
+  max-height: none; /* 최대 높이 해제 */
+}
+/* 추천 및 추가 설명 스타일 */
+.recoD,
+.explain2D,
+.mapD {
+  font-size: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.explain3D {
+  font-size: 15px;
+}
+
+/* 음악 테이블 컨테이너 스타일 */
+.musicTableContainer {
+  padding: 10px;
+}
+
+/* 음악 테이블 스타일 */
+.musicTD {
+  width: 360px; /* 음악 테이블 너비 360px로 변경 */
+  border-collapse: collapse;
+}
+
+/* 음악 테이블 헤더 스타일 */
+.musicTD th {
+  text-align: center;
+  padding: 8px;
+}
+
+/* 음악 행 스타일 */
+.musicRow {
+  height: 60px; /* 각 행의 높이를 60px로 설정 (기존 높이의 1.5배) */
+  line-height: 1.5; /* 텍스트의 줄 간격을 1.5배로 설정 */
+}
+
+/* 곡 정보 셀 스타일 */
+.musicTitleCell {
+  max-width: 150px;
+  white-space: normal; /* 개행 허용 */
+  overflow: hidden; /* 넘치는 부분 숨기기 */
+  text-overflow: ellipsis; /* 넘치는 부분을 ...으로 표시 */
+  display: flex;
+  align-items: center; /* 요소를 수직 중앙 정렬 */
+  position: relative; /* 부모 요소로부터 상대적 위치 지정 */
+  cursor: pointer;
+  line-height: 1.2; /* 줄 간격 설정 */
+}
+
+/* 곡 정보 셀 안의 이미지 스타일 */
+.musicTitleCell img {
+  width: 60px; /* 이미지 너비 60px로 설정 */
+  height: 60px; /* 이미지 높이 60px로 설정 */
+  float: left; /* 이미지를 왼쪽으로 부유시킴 */
+  margin-right: 20px; /* 이미지와 텍스트 사이의 간격 설정 */
+}
+
+/* 마우스 호버 시 텍스트 풀 사이즈 표시 */
+.musicTitleCell:hover::before {
+  content: attr(data-text); /* 풀 사이즈 텍스트 표시 */
+  position: absolute; /* 절대 위치 지정 */
+  top: 100%; /* 부모 요소 하단 정렬 */
+  left: 0;
+  background-color: whitesmoke;
+  padding: 10px;
+  border: 1px solid #ccc;
+  white-space: normal; /* 텍스트 줄 바꿈 허용 */
+  z-index: 1; /* 다른 요소 위에 표시 */
+}
+
+.travelD {
+  font-size: 30px;
+  text-decoration: underline;
+  text-decoration-color: #bcf8fa;
+  text-decoration-style: solid;
+  text-decoration-thickness: 7px;
+}
+
+.sing1D {
+  width: 60px; /* 이미지 너비 60px로 설정 */
+  height: 60px; /* 이미지 높이 60px로 설정 */
+  float: left; /* 이미지를 왼쪽으로 부유시킴 */
+  margin-right: 20px; /* 이미지와 텍스트 사이의 간격 설정 */
+}
+
+.allD {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 모든 요소를 가운데 정렬 */
+}
+
+.Btn1 {
+  background-color: rgb(212, 241, 253);
+  width: 220px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: auto; /* 가운데 정렬 */
+  margin-right: auto;
+  margin-bottom: 40px;
+}

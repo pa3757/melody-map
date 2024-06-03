@@ -1,0 +1,103 @@
+/* Test.css */
+
+@font-face {
+  font-family: "WavvePADO-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "WavvePADO-Regular";
+  box-sizing: border-box; /* 모든 요소의 박스 크기 계산에 border 및 padding 포함 */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  text-align: center;
+  /* background-image: url("/public/image/Main2.png"); */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid whitesmoke;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  width: 380px;
+  max-width: 100%;
+  height: auto;
+  overflow: auto; /* 내용이 넘칠 경우 스크롤 표시 */
+  overflow-x: hidden;
+}
+
+.question {
+  color: gold;
+  -webkit-text-stroke: 1px black;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.content {
+  background-color: whitesmoke;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 20px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.que1,
+.que2 {
+  background-color: rgb(212, 241, 253);
+  color: black;
+  font-size: large;
+  font-weight: 800;
+  border-radius: 20px;
+  border: 3px solid black;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.coursebox {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}

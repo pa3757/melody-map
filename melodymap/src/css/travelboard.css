@@ -1,0 +1,120 @@
+/* 웹폰트 추가 */
+@font-face {
+  font-family: "WavvePADO-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "WavvePADO-Regular";
+  box-sizing: border-box;
+}
+
+.container9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 화면 전체 높이 사용 */
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-direction: column; /* 사이드바와 콘텐츠가 세로로 정렬되도록 설정 */
+}
+
+.wrapper9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid whitesmoke;
+  padding: 30px;
+  border-radius: 40px;
+  background-color: whitesmoke;
+  width: 380px;
+  height: auto;
+  margin: 0 auto; /* 수평 가운데 정렬 */
+}
+
+.content9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 내부 요소들을 가운데 정렬 */
+  justify-content: center;
+  width: 100%;
+}
+
+.board9 {
+  font-size: 30px;
+  border: 2px solid #05e3eb;
+  background-color: transparent;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 330px;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+.write9 {
+  background-color: rgb(212, 241, 253);
+  width: 200px;
+  margin-top: 30px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+.table9 {
+  margin-top: 10px;
+  width: 360px;
+  border-collapse: collapse;
+  border: none;
+}
+
+.table9 th,
+.table9 td {
+  height: 50px;
+  text-align: center;
+  border: none;
+}
+
+.table9 th:nth-child(1),
+.table9 td:nth-child(1) {
+  width: 40px;
+}
+
+.table9 th:nth-child(2),
+.table9 td:nth-child(2) {
+  width: 150px;
+}
+
+.table9 th:nth-child(3),
+.table9 td:nth-child(3) {
+  width: 70px;
+}
+
+.table9 th:nth-child(4),
+.table9 td:nth-child(4) {
+  /* 나머지 너비를 차지하도록 설정 */
+}
+
+.table9 tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.table9 tr:last-child {
+  border-bottom: none;
+}
+
+#Btn9 {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-weight: bold;
+}

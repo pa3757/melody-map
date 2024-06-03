@@ -1,0 +1,36 @@
+.sidebar {
+  display: flex;
+  flex-direction: row; /* 가로 방향으로 변경 */
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 300px; /* 가로 길이를 300px로 고정 */
+  padding: 10px 0;
+  box-sizing: border-box; /* 패딩을 포함한 박스 크기 계산 */
+}
+
+.sidebar button {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "WavvePADO-Regular"; /* 폰트 패밀리 추가 */
+}
+
+.sidebar button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+@media (max-width: 320px) {
+  .sidebar {
+    flex-direction: column; /* 작은 화면에서는 세로 방향으로 변경 */
+    align-items: flex-start;
+    width: 100%; /* 가로 길이를 100%로 설정 */
+    padding: 20px;
+  }
+}

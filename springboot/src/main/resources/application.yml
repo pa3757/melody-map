@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+
+kakao:
+  client-id: 9025563b9f5c4caefe97848a4e2c4370
+  redirect-uri: https://getpostman.com/oauth2/callback

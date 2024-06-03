@@ -1,0 +1,227 @@
+@font-face {
+  font-family: "WavvePADO-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "WavvePADO-Regular";
+}
+
+.containerR {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*  background-image: url("/public/image/Main2.png"); */
+}
+
+.wrapperR {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 모든 요소를 가운데 정렬 */
+  border: 5px solid whitesmoke;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  width: 380px;
+  height: auto; /* 수정: .wrapper 높이 조정 */
+  margin: 0 auto; /* 수평 가운데 정렬을 위해 추가 */
+}
+
+.contentR,
+.recoR,
+.d1R,
+.d2R,
+.d3R {
+  text-align: center;
+}
+
+.d1R {
+}
+
+.image-wrapperR {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  border: 2px solid #05e3eb;
+  width: 330px;
+  height: 290px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.center1R,
+.center2R {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.center1R .imageR,
+.center2R .imageR {
+  width: 220px;
+  height: 130px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.center1R .explain0R,
+.center2R .explain3R {
+  text-align: center;
+  margin-top: 0px; /* 이미지와 p태그 간격 조정 */
+}
+
+.image-wrapperR .explainR,
+.image-wrapper2R .explainR {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(190px - 20px); /* 이미지 너비 - 이미지 오른쪽 마진 */
+  text-align: center;
+  left: calc(100% + 10px); /* 이미지 오른쪽 여백 + 마진 */
+}
+
+.reco2R {
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 2px solid #05e3eb;
+  padding: 10px;
+  cursor: pointer;
+  width: 220px;
+  margin-top: 50px;
+  height: 50px;
+}
+
+.explain1R,
+.explain4R {
+  font-size: 15px;
+  margin-bottom: 3px; /* explain1과 explain4 사이의 간격 조정 */
+}
+
+.explain2R,
+.explain5R {
+  color: steelblue;
+  font-size: 22px;
+  margin-top: 10px; /* explain2와 explain5 사이의 간격 조정 */
+}
+
+.login1R,
+.Join1R {
+  color: white;
+  background-color: black;
+  width: 120px;
+  margin-top: 100px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.login1R {
+  margin-right: 10px;
+}
+
+.Join1R {
+  margin-left: 10px;
+}
+
+.kakaotalkR,
+.facebookR,
+.bandR,
+.navertalkR {
+  width: 30px;
+  height: 30px;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* 추가된 스타일 */
+
+.d1R {
+  font-size: 30px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.recoR {
+  font-size: 35px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.image-wrapper2R {
+  margin-top: 20px;
+}
+.musicR {
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+.otherResult {
+  background-color: rgb(212, 241, 253);
+  width: 220px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-left: auto; /* 왼쪽 여백을 auto로 설정하여 가운데 정렬 */
+  margin-right: auto;
+}
+.saveR {
+  background-color: rgb(212, 241, 253);
+  width: 220px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-left: auto; /* 왼쪽 여백을 auto로 설정하여 가운데 정렬 */
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.otherR {
+  margin-top: 80px; /* 부모 요소에서 80px 아래에 위치하도록 조정 */
+  font-size: 30px;
+  color: steelblue;
+  text-align: center; /* 텍스트를 가운데 정렬 */
+  position: relative;
+}
+
+.otherR::after {
+  content: "";
+  position: absolute;
+  top: 60px; /* 부모 요소에서 20px 아래에 위치하도록 조정 */
+  left: 50%; /* 가운데 정렬을 위해 추가 */
+  transform: translateX(-50%); /* 가운데 정렬을 위해 추가 */
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid steelblue;
+}
+.aaa {
+  margin-top: 300px;
+  display: flex;
+  justify-content: center; /* a 태그를 가운데 정렬 */
+}
+.aaa a {
+  display: flex;
+  justify-content: center; /* 이미지 태그를 가운데 정렬 */
+}

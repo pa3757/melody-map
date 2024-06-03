@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "WavvePADO-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "WavvePADO-Regular";
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  /*  background-image: url("/public/image/Main2.png"); */
+  background-size: contain; /* 이미지가 짤리지 않고 컨테이너에 맞게 조절 */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 수직 중앙 정렬 */
+  align-items: center; /* 수평 중앙 정렬 */
+  border: 5px solid whitesmoke;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  width: 380px;
+  height: auto;
+}
+
+.content {
+  text-align: center;
+}
+
+.start {
+  background-color: white;
+  color: black;
+  font-size: 30px;
+  font-weight: 800;
+  border-radius: 30px;
+  border: 3px solid black;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 300px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
