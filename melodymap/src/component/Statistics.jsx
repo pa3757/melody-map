@@ -5,6 +5,24 @@ import MBTIBarChart from "./Barchart";
 import SideBar from "./SideBar";
 
 const Statistics = () => {
+  // const serverScancount = async () => {
+  //   try {
+  //     const res = await axios.post(
+  //       "https://jo07xi8kmg.execute-api.ap-northeast-2.amazonaws.com",
+  //       {},
+  //       {
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //           "spring.cloud.function.definition": "Scancount",
+  //         },
+  //       }
+  //     );
+  //     console.log(res.data);
+  //   } catch (error) {
+  //     console.error("데이터 요청 중 오류 발생:", error);
+  //   }
+  // };
+
   const mbtiData1 = [
     { type: "사색적", count: 7 },
     { type: "전략적", count: 12 },

@@ -155,7 +155,6 @@ public class SpringbootApplication {
 			}
 		};
 	}
-
 	@Bean
 	public Function<Message<Map<String, Object>>, Message<Object>> scanComment() {
 		return message -> {
@@ -231,6 +230,8 @@ public class SpringbootApplication {
 		};
 	}
 
+
+
 	@Bean
 	public Function<Message<Map<String, Object>>, Message<Object>> deleteUser() {
 		return message -> {
@@ -243,6 +244,20 @@ public class SpringbootApplication {
 			return createResponse("User deleted successfully", 200);
 		};
 	}
+
+//	@Bean
+//	public Function<Message<Void>, Message<Object>> Scancount() {
+//		return message -> {
+//			List<MelodyMap2> results = dynamoDBFindService.scan(MelodyMap2.class);
+//
+//			// 선택된 필드(result_choice, count)만을 반환하기 위해 Map으로 변환
+//			List<Object> responsePayload = results.stream()
+//					.map(result -> (Object) Map.of("result_choice", result.getResult_choice(), "count", result.getCount()))
+//					.collect(Collectors.toList());
+//
+//			return createResponse(responsePayload, 200);
+//		};
+//	}
 
 	@Bean
 	public Function<Message<Map<String, Object>>, Message<Object>> updateUserData() {
